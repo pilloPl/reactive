@@ -74,4 +74,22 @@ class BookingController {
     }
 
 
+//    public static void main(String[] args) {
+//        WebClient client = WebClient.create("http://localhost:8080");
+//
+//        Flux<Booking> bookings
+//                = Flux.interval(Duration.ofSeconds(1)).map(i -> new Booking());
+//
+//        client
+//                .post()
+//                .uri("/bookings")
+//                .contentType(MediaType.APPLICATION_STREAM_JSON)
+//                .body(bookings, Booking.class)
+//                .retrieve()
+//                .bodyToFlux(Booking.class)
+//                .blockLast();
+//
+//    }
+
+
 }
